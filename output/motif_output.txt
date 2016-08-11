@@ -1,0 +1,55 @@
+IYQYIQSR : {
+"n_match" : 2, "n_seq" : 2,
+"matchset" : [
+{"sequence_ac" : "Q13627", "sequence_id" : "DYR1A_HUMAN", "sequence_db" : "sp", "start" : 318, "stop" : 325, "signature_ac" : "USERPAT1" },
+{"sequence_ac" : "Q9Y463", "sequence_id" : "DYR1B_HUMAN", "sequence_db" : "sp", "start" : 270, "stop" : 277, "signature_ac" : "USERPAT1" } 
+] }
+
+++++++++++++++++++
+KSAPATGGVKKPHR : {
+"n_match" : 3, "n_seq" : 3,
+"matchset" : [
+{"sequence_ac" : "Q16695", "sequence_id" : "H31T_HUMAN", "sequence_db" : "sp", "start" : 28, "stop" : 41, "signature_ac" : "USERPAT1" },
+{"sequence_ac" : "P68431", "sequence_id" : "H31_HUMAN", "sequence_db" : "sp", "start" : 28, "stop" : 41, "signature_ac" : "USERPAT1" },
+{"sequence_ac" : "Q71DI3", "sequence_id" : "H32_HUMAN", "sequence_db" : "sp", "start" : 28, "stop" : 41, "signature_ac" : "USERPAT1" } 
+] }
+
+++++++++++++++++++
+
+Modification : Y[+80]
+[['MOD:00048', 'Y', '79.98', 'A protein modification that effectively converts an L-tyrosine residue to O4&apos;-phospho-L-tyrosine.']]
+Number of similars : 
+3
+Similar : 
+['MOD:00254', 'Y', '79.98', 'A protein modification that effectively crosslinks an L-tyrosine residue and the 5&apos;-end of RNA through a phosphodiester to form O4&apos;-(phospho-5&apos;-RNA)-L-tyrosine.']
+['MOD:00259', 'Y', '79.98', 'A protein modification that effectively crosslinks an L-tyrosine residue and the 5&apos;-end of DNA through a phosphodiester bond to form O4&apos;-(phospho-5&apos;-DNA)-L-tyrosine.']
+['MOD:00328', 'Y', '79.98', 'A protein modification that effectively crosslinks an L-tyrosine residue and the 3&apos;-end of DNA through a phosphodiester bond to form O4&apos;-(phospho-3&apos;-DNA)-L-tyrosine.']
+
+-------------------
+
+Modification : K[+112.1]
+[['MOD:00560', 'K', '112.13', 'modification from UniMod Other']]
+Number of similars : 
+0
+Similar : 
+
+-------------------
+
+Modification : K[+42]
+[['MOD:00057', 'K', '42.04', 'A protein modification that effectively converts an L-lysine residue to N2-acetyl-L-lysine.']]
+Number of similars : 
+3
+Similar : 
+['MOD:00064', 'K', '42.04', 'A protein modification that effectively converts an L-lysine residue to N6-acetyl-L-lysine.']
+['MOD:00445', 'K', '42.04', 'A protein modification that effectively converts an L-lysine residue to L-homoarginine, such as reaction with O-methylisourea.']
+['MOD:00723', 'K', '42.04', 'A protein modification that effectively converts an L-lysine residue to either N2-acetyl-L-lysine, or N6-acetyl-L-lysine.']
+
+-------------------
+
+Modification : K[+56]
+[['MOD:01232', 'K', '56.03', 'A protein modification that effectively converts an L-lysine residue to 3x(12)C labeled N6-propanoyl-L-lysine.']]
+Number of similars : 
+0
+Similar : 
+
+-------------------

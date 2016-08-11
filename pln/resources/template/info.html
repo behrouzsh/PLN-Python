@@ -1,0 +1,52 @@
+<!doctype html>
+<title>PLN converter</title>
+<head>
+    <!-- Favicon -->
+    <link rel="shortcut icon"
+          href="http://www.lincs-dcic.org/images/dcic-logo/favicon.png?v=2"/>
+</head>
+
+    <div class="container">
+        <h3> About</h3>
+        <hr/>
+<link rel=stylesheet type=text/css href='{{ url_for('static',filename='style.css')}}'>
+        <div class="paper">
+            <p>Protein Line Notation (PLN) is a notation that encodes “protein forms” as a linear string of
+                characters. A protein form is a “splice isoform, mutation variant and co- or post-translationally
+                modified form (and combinations thereof) that can arise from translation from [a] gene,” as defined by
+                the PRO ontology (Natale 2011). It is based on the open-world assumption and can encode both positive
+                and negative information.</p>
+        </div>
+
+    </div>
+
+
+<div class=page>
+  <h1>Enter peptides</h1>
+  <div class=metanav>
+    <h4>
+      Please separate the motifs with ';'.
+    </h4>
+
+    <form id='motifs' method='post' action='pln' >
+      <p>
+    	Motifs: <input type='text' name='motif' />
+      </p>
+      <p>
+    	<input type='submit' value='Submit' />
+      </p>
+    </form>
+
+  </div>
+</div>
+
+    <div class="container" style="padding-top: 20px;">
+        <h3> References</h3>
+        <hr/>
+
+        <div class="bs-callout bs-callout-default">
+            <p>Natale, D. A., Arighi, C. N., Barker, W. C., Blake, J. A., Bult, C. J., Caudy, M., … Wu, C. H. (2011).
+                The Protein Ontology: a structured representation of protein forms and complexes. Nucleic Acids
+                Research, 39(Database issue), D539–D545. doi:10.1093/nar/gkq907.</p>
+        </div>
+    </div>
