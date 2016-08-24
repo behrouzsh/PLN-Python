@@ -1,19 +1,14 @@
-IYQYIQSR : {
-"n_match" : 2, "n_seq" : 2,
-"matchset" : [
-{"sequence_ac" : "Q13627", "sequence_id" : "DYR1A_HUMAN", "sequence_db" : "sp", "start" : 318, "stop" : 325, "signature_ac" : "USERPAT1" },
-{"sequence_ac" : "Q9Y463", "sequence_id" : "DYR1B_HUMAN", "sequence_db" : "sp", "start" : 270, "stop" : 277, "signature_ac" : "USERPAT1" } 
-] }
-
+IYQY[+80]IQSR -> IYQYIQSR : 
+------------------
+PLN=ver1:InChl-like/r=uniprot:Q13627;uniprot:Q9Y463/s=hugo:DYR1A_HUMAN;hugo:DYR1B_HUMAN/d=/v=/m=MOD:00048@321;MOD:00048@273#
 ++++++++++++++++++
-KSAPATGGVKKPHR : {
-"n_match" : 3, "n_seq" : 3,
-"matchset" : [
-{"sequence_ac" : "Q16695", "sequence_id" : "H31T_HUMAN", "sequence_db" : "sp", "start" : 28, "stop" : 41, "signature_ac" : "USERPAT1" },
-{"sequence_ac" : "P68431", "sequence_id" : "H31_HUMAN", "sequence_db" : "sp", "start" : 28, "stop" : 41, "signature_ac" : "USERPAT1" },
-{"sequence_ac" : "Q71DI3", "sequence_id" : "H32_HUMAN", "sequence_db" : "sp", "start" : 28, "stop" : 41, "signature_ac" : "USERPAT1" } 
-] }
-
+IYQYIQSR -> IYQYIQSR : 
+------------------
+PLN=ver1:InChl-like/r=uniprot:Q13627;uniprot:Q9Y463/s=hugo:DYR1A_HUMAN;hugo:DYR1B_HUMAN/d=/v=/m=#
+++++++++++++++++++
+K[+112.1]SAPATGGVK[+42]K[+56]PHR -> KSAPATGGVKKPHR : 
+------------------
+PLN=ver1:InChl-like/r=uniprot:Q16695;uniprot:P68431;uniprot:Q71DI3/s=hugo:H31T_HUMAN;hugo:H31_HUMAN;hugo:H32_HUMAN/d=/v=/m=MOD:00560@28;MOD:00057@37;MOD:01232@38;MOD:00560@28;MOD:00057@37;MOD:01232@38;MOD:00560@28;MOD:00057@37;MOD:01232@38#
 ++++++++++++++++++
 
 Modification : Y[+80]

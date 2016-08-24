@@ -47,7 +47,7 @@ class Client(object):
         response = self._request(url)
         search_result = self._extract_response(response)
         print response.text
-        return response.text
+        return search_result
 
 
     def _request(self, url, params=None):
