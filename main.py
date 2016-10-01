@@ -4,7 +4,7 @@
 # import oauth2 as oauth
 # import urllib2 as urllib
 
-from pln import Pln
+from pln.pln import Pln
 
 if __name__ == '__main__':
     pln = Pln()

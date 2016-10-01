@@ -1,9 +1,9 @@
 import json
-from search import Client
+from plnSearch.client import Client
 import sys
-reload(sys)
+# reload(sys)
 import csv
-sys.setdefaultencoding('utf8')
+# sys.setdefaultencoding('utf8')
 
 class Pln(object):
     """Pln class is to read the input file and extract the motifs and modifications.
@@ -31,8 +31,8 @@ class Pln(object):
         for motif in motifs_data:
             tmp_list = self.analyze_motif(motif)
             self.motif_and_modification_list.append(tmp_list)
-        print "----------Here----------"
-        print self.motif_and_modification_list
+        # print "----------Here----------"
+        # print self.motif_and_modification_list
         return self.motif_and_modification_list
 
     def analyze_motif(self, motif):
@@ -92,8 +92,8 @@ class Pln(object):
                     reader = csv.reader(csvfile, delimiter='\t')
                     diff = 100000000
                     first_line = True
-                    print "psimod"
-                    print psimod[1], '--', psimod[2]  # , '--',row[2], '--',row[3]
+                    # print "psimod"
+                    # print psimod[1], '--', psimod[2]  # , '--',row[2], '--',row[3]
                     local_psimod = []
                     local_similar_psimod = []
                     similar = 0
@@ -117,30 +117,30 @@ class Pln(object):
                         if psimod[1] == row[1] and local_diff == diff:
                             local_similar_psimod.append(row)
                             similar = similar + 1
-                    print "local_psimod: ", local_psimod
-                    print "local_psimod: ", local_psimod[0][0]
-                    print self.motif_and_modification_list
-                    print self.motif_and_modification_list[item_num][1][psimod_num]
+                    # print "local_psimod: ", local_psimod
+                    # print "local_psimod: ", local_psimod[0][0]
+                    # print self.motif_and_modification_list
+                    # print self.motif_and_modification_list[item_num][1][psimod_num]
                     self.motif_and_modification_list[item_num][1][psimod_num].append(local_psimod[0][0])
-                    print self.motif_and_modification_list[item_num][1][psimod_num]
+                    # print self.motif_and_modification_list[item_num][1][psimod_num]
 
-                    print "Here 2"
-                    print self.motif_and_modification_list
-                    print "-------------------------------------------"
-                    print "Similar: ", similar
-                    print "-------------------------------------------"
-                    print "local_similar_psimod: ", local_similar_psimod
-                    print "++++++++++++++++++++++++++++++++++++++++++++++++++"
+                    # print "Here 2"
+                    # print self.motif_and_modification_list
+                    # print "-------------------------------------------"
+                    # print "Similar: ", similar
+                    # print "-------------------------------------------"
+                    # print "local_similar_psimod: ", local_similar_psimod
+                    # print "++++++++++++++++++++++++++++++++++++++++++++++++++"
                     self.psimod_result.append([local_psimod,similar,local_similar_psimod, psimod[1], psimod[2]])
 
-        print self.psimod_result
+        # print self.psimod_result
         return self.psimod_result
 
     def extract_diff(self, idx1,idx2):
         return abs(float(idx1) - float(idx2))
 
     def print_to_file(self, motif_list, prosite_response, psimod_response):
-        with open('output/motif_output.txt', "w") as output_file:
+        with open('output/pln_format_output.txt', "w") as output_file:
             for x in range(0, len(prosite_response)):
                 output_file.write(self._motifs_data[x])
                 output_file.write(" -> ")
@@ -154,8 +154,8 @@ class Pln(object):
                 # uniprot ++++++++++++++++++++++++++++++++++++++++++++
                 flag = 0
                 for match in range(0, n_match):
-                    print matches[match]
-                    print "+++++++++"
+                    # print matches[match]
+                    # print "+++++++++"
                     output_inchlike = output_inchlike + "uniprot:" + matches[match].get("sequence_ac")+ ";"
                     flag = 1
                 if flag == 1:
@@ -176,13 +176,13 @@ class Pln(object):
                 for match in range(0, n_match):
                     for modification in range(0, len(self.motif_and_modification_list[x][1])):
                         flag = 1
-                        print modification
+                        # print modification
                         start = matches[match].get("start")
-                        print start
-                        print int(self.motif_and_modification_list[x][1][modification][0])
+                        # print start
+                        # print int(self.motif_and_modification_list[x][1][modification][0])
                         position = start -1 + int(self.motif_and_modification_list[x][1][modification][0])
-                        print position
-                        print self.motif_and_modification_list[x][1][modification][3]
+                        # print position
+                        # print self.motif_and_modification_list[x][1][modification][3]
                         output_inchlike = output_inchlike + self.motif_and_modification_list[x][1][modification][3] + \
                                           "@" +  str(position) + ";"
                 if flag == 1:

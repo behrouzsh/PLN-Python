@@ -9,6 +9,6 @@ __version__ = '0.1.0'
 __install_requires__ = ['requests>=1.1.0']
 
 __author__ = 'Behrouz Shamsaei'
-__email__ = 'shamsabz@ucmail.uc.edu'
+__email__ = 'behrouz.shamsaei@uc.edu'
 
-__license__ = ''
+__license__ = 'MIT'
